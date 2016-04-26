@@ -2,7 +2,7 @@ core: 8.x
 api: 2
 projects:
   drupal:
-    version: "8.0.5"
+    version: "8.1.0"
   drutopia:
     type: "profile"
     download:
@@ -21,7 +21,7 @@ projects:
     version: "1.1"
   features:
     subdir: "contrib"
-    version: "3.0-alpha6"
+    version: "3.0-beta3"
   
 
 
