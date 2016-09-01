@@ -9,12 +9,54 @@ projects:
       type: git
       url: https://gitlab.com/drutopia/drutopia-distribution.git
       branch: 8.x-1.x
-  drutopia_features:
+  drutopia_article:
     type: "module"
     subdir: "contrib"
     download:
       type: git
-      url: https://gitlab.com/drutopia/drutopia-features.git
+      url: https://gitlab.com/drutopia/drutopia_article.git
+      branch: 8.x-1.x
+  drutopia_blog:
+    type: "module"
+    subdir: "contrib"
+    download:
+      type: git
+      url: https://gitlab.com/drutopia/drutopia_blog.git
+      branch: 8.x-1.x
+  drutopia_comment:
+    type: "module"
+    subdir: "contrib"
+    download:
+      type: git
+      url: https://gitlab.com/drutopia/drutopia_comment.git
+      branch: 8.x-1.x
+  drutopia_core:
+    type: "module"
+    subdir: "contrib"
+    download:
+      type: git
+      url: https://gitlab.com/drutopia/drutopia_core.git
+      branch: 8.x-1.x
+  drutopia_page:
+    type: "module"
+    subdir: "contrib"
+    download:
+      type: git
+      url: https://gitlab.com/drutopia/drutopia_page.git
+      branch: 8.x-1.x
+  drutopia_site:
+    type: "module"
+    subdir: "contrib"
+    download:
+      type: git
+      url: https://gitlab.com/drutopia/drutopia_site.git
+      branch: 8.x-1.x
+  drutopia_user:
+    type: "module"
+    subdir: "contrib"
+    download:
+      type: git
+      url: https://gitlab.com/drutopia/drutopia_user.git
       branch: 8.x-1.x
   config_update:
     subdir: "contrib"
