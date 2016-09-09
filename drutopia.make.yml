@@ -9,6 +9,7 @@ projects:
       type: git
       url: https://gitlab.com/drutopia/drutopia-distribution.git
       branch: 8.x-1.x
+      working-copy: TRUE
   drutopia_article:
     type: "module"
     subdir: "contrib"
@@ -16,6 +17,7 @@ projects:
       type: git
       url: https://gitlab.com/drutopia/drutopia_article.git
       branch: 8.x-1.x
+      working-copy: TRUE
   drutopia_blog:
     type: "module"
     subdir: "contrib"
@@ -23,6 +25,7 @@ projects:
       type: git
       url: https://gitlab.com/drutopia/drutopia_blog.git
       branch: 8.x-1.x
+      working-copy: TRUE
   drutopia_comment:
     type: "module"
     subdir: "contrib"
@@ -30,6 +33,7 @@ projects:
       type: git
       url: https://gitlab.com/drutopia/drutopia_comment.git
       branch: 8.x-1.x
+      working-copy: TRUE
   drutopia_core:
     type: "module"
     subdir: "contrib"
@@ -37,6 +41,7 @@ projects:
       type: git
       url: https://gitlab.com/drutopia/drutopia_core.git
       branch: 8.x-1.x
+      working-copy: TRUE
   drutopia_page:
     type: "module"
     subdir: "contrib"
@@ -44,6 +49,7 @@ projects:
       type: git
       url: https://gitlab.com/drutopia/drutopia_page.git
       branch: 8.x-1.x
+      working-copy: TRUE
   drutopia_site:
     type: "module"
     subdir: "contrib"
@@ -51,6 +57,7 @@ projects:
       type: git
       url: https://gitlab.com/drutopia/drutopia_site.git
       branch: 8.x-1.x
+      working-copy: TRUE
   drutopia_user:
     type: "module"
     subdir: "contrib"
@@ -58,6 +65,7 @@ projects:
       type: git
       url: https://gitlab.com/drutopia/drutopia_user.git
       branch: 8.x-1.x
+      working-copy: TRUE
   config_update:
     subdir: "contrib"
     version: "1.1"
@@ -65,5 +73,3 @@ projects:
     subdir: "contrib"
     version: "3.0-beta7"
   
-
-
