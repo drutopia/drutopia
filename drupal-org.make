@@ -1,9 +1,9 @@
 api = 2
 core = 8.x
 
-projects[config_update][version] = 1.1
+projects[config_update][version] = 1.2
 projects[config_update][subdir] = contrib
-projects[features][version] = 3.0-beta7
+projects[features][version] = 3.1
 projects[features][subdir] = contrib
 
 projects[drutopia_article][version] = 1.x-dev
