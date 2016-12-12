@@ -3,7 +3,7 @@ core = 8.x
 
 projects[config_update][version] = 1.2
 projects[config_update][subdir] = contrib
-projects[features][version] = 3.1
+projects[features][version] = 3.2
 projects[features][subdir] = contrib
 
 projects[drutopia_article][version] = 1.x-dev
