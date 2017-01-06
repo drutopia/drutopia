@@ -2,7 +2,9 @@ The Drutopia distribution will be the flagship libre software product of the [Dr
 
 # Contributing
 
-Please take note of the [technical guide](https://gitlab.com/drutopia/drutopia-distribution/wikis/technical-guide) and [criteria for extensions](https://gitlab.com/drutopia/drutopia-distribution/wikis/extension-criteria-and-candidates) when contributing.
+We'd love for you to get involved! First review our [Contributing Guide](https://gitlab.com/drutopia/drutopia-distribution/blob/8.x-1.x/CONTRIBUTING.md)
+
+Then take note of the [technical guide](https://gitlab.com/drutopia/drutopia-distribution/wikis/technical-guide) and [criteria for extensions](https://gitlab.com/drutopia/drutopia-distribution/wikis/extension-criteria-and-candidates) when contributing.
 
 # Documentation
 
