@@ -4,8 +4,8 @@ Hello and welcome to the Drutopia project! We’re excited to have you here. The
 
 # First things first 
 
-* Check out our [Drutopia manifesto](https://gitlab.com/drutopia/drutopia-distribution/wikis/manifesto) for the big picture inspiration behind this effort.
-* We’ve got each others' backs here. The [Code of Conduct](https://gitlab.com/drutopia/drutopia-distribution/wikis/drutopia-code-of-conduct) outlines exactly how.
+* Check out our [Drutopia manifesto](https://gitlab.com/drutopia/drutopia/wikis/manifesto) for the big picture inspiration behind this effort.
+* We’ve got each others' backs here. The [Code of Conduct](https://gitlab.com/drutopia/drutopia/wikis/drutopia-code-of-conduct) outlines exactly how.
 * A bit more info on [Drupal](https://www.drupal.org/about), which is what Drutopia is built off of.
 
 
@@ -61,7 +61,7 @@ We welcome coders of all backgrounds and skillsets! Drutopia is a great place to
 
 To get started, 
 
-1. Follow the [Drutopia Technical Guide](https://gitlab.com/drutopia/drutopia-distribution/wikis/technical-guide)
+1. Follow the [Drutopia Technical Guide](https://gitlab.com/drutopia/drutopia/wikis/technical-guide)
 2. Install Drutopia
 3. Join the conversation on IRC at #drutopia
 
@@ -81,13 +81,13 @@ We document the project through README files and wiki pages on GitLab. We keep t
 
 We try to keep in mind [these tips for beginner-friendly documentation](https://datamade.us/blog/better-living-through-documentation).  It's a high bar and there's lot's of work needed to get there.
 
-See [the list of outstanding documentation issues](https://gitlab.com/drutopia/drutopia-distribution/issues?label_name%5B%5D=documentation) for places you can help!
+See [the list of outstanding documentation issues](https://gitlab.com/drutopia/drutopia/issues?label_name%5B%5D=documentation) for places you can help!
 
 ## Feature Requests
 
 If you've got a great idea, we want to hear about it!  Before making a suggestion, here are a few handy tips on what to consider:
 
-* [Search to see if the feature has already been requested](https://gitlab.com/drutopia/drutopia-distribution/issues?label_name%5B%5D=suggestion).
+* [Search to see if the feature has already been requested](https://gitlab.com/drutopia/drutopia/issues?label_name%5B%5D=suggestion).
 * TODO write a section like this?  Check out What makes it into Drutopia core? - this explains the guidelines for what fits into the scope and aims of the project
 * Remember, your suggestion can't get adopted if people don't understand it. Please provide as much detail and context as possible. Explain the use case and why it is likely to be common. The strongest vote in favor of any feature request is clear demand among potential users/members of Drutopia.
 * When making the request, tag it with "suggestion".  TODO create issue template for this.
