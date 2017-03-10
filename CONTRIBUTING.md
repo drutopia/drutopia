@@ -92,6 +92,18 @@ If you've got a great idea, we want to hear about it!  Before making a suggestio
 * Remember, your suggestion can't get adopted if people don't understand it. Please provide as much detail and context as possible. Explain the use case and why it is likely to be common. The strongest vote in favor of any feature request is clear demand among potential users/members of Drutopia.
 * When making the request, tag it with "suggestion".  TODO create issue template for this.
 
+
+## Outreach
+
+Drutopia's public presence includes our web site, our projects on Gitlab and Drupal.org, social media, and (gasp) in-person gatherings at conferences and meetups. Here are just some of the ways you can help Drutopia:
+
+* [Sign up as a supporter](http://drutopia.org/)
+* Retweet and share Drutopia content
+* Join our social media team to tweet and post to Facebook on behalf of Drutopia
+* Respond to questions and comments on social media
+* Plan and/or host hack-a-thons, trainings and presentations
+* Blog about Drutopia!
+
 ## Project Management
 
 Do you have skills as a project manager or have interest in helping to plan, track and bring Drutopia features to completion?  Here are some of the things you can do to become involved in the project management aspect of the project:
@@ -105,17 +117,6 @@ Do you have skills as a project manager or have interest in helping to plan, tra
   * Checking in on the progress of these tasks to ensure that overall Drutopia project schedules are being met
   * Reporting the status of an initiative to the initiative team
 
-
-## Outreach
-
-Drutopia's public presence includes our web site, our projects on Gitlab and Drupal.org, social media, and (gasp) in-person gatherings at conferences and meetups. Here are just some of the ways you can help Drutopia:
-
-* [Sign up as a supporter](http://drutopia.org/)
-* Retweet and share Drutopia content
-* Join our social media team to tweet and post to Facebook on behalf of Drutopia
-* Respond to questions and comments on social media
-* Plan and/or host hack-a-thons, trainings and presentations
-* Blog about Drutopia!
 
 ## Research
 
