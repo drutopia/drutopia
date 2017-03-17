@@ -6,6 +6,7 @@ Hello and welcome to the Drutopia project! We’re excited to have you here. The
 
 * Check out our [Drutopia manifesto](https://gitlab.com/drutopia/drutopia/wikis/manifesto) for the big picture inspiration behind this effort.
 * We’ve got each others' backs here. The [Code of Conduct](https://gitlab.com/drutopia/drutopia/wikis/drutopia-code-of-conduct) outlines exactly how.
+* Drutopia is both a project and a member-based [platform cooperative](https://en.wikipedia.org/wiki/Platform_cooperative). Here is how we make decisions - [Decision Making](https://gitlab.com/drutopia/drutopia/wikis/decision-making) Making]
 * A bit more info on [Drupal](https://www.drupal.org/about), which is what Drutopia is built off of.
 
 
