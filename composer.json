@@ -44,20 +44,21 @@
         "drupal/drutopia_page": "1.x-dev",
         "drupal/drutopia_site": "1.x-dev",
         "drupal/drutopia_user": "1.x-dev"
-  },
-  "require-dev": {
-      "drush/drush": "^8.0",
-      "drupal/drupal-extension": "^3.2",
-      "drupal-composer/drupal-scaffold": "^2.0.0",
-      "behat/behat": "^3.0",
-      "phing/phing": "^2.14",
-      "behat/mink": "~1.7",
-      "behat/mink-goutte-driver": "~1.2",
-      "jcalderonzumba/gastonjs": "~1.0.2",
-      "mikey179/vfsStream": "~1.2",
-      "phpunit/phpunit": "~4.8",
-      "symfony/css-selector": "~2.8",
-      "drupal/devel": "^1.0",
-      "squizlabs/php_codesniffer": "2.*",
-      "se/selenium-server-standalone": "^2.53"
+    },
+    "require-dev": {
+        "drush/drush": "^8.0",
+        "drupal/drupal-extension": "^3.2",
+        "drupal-composer/drupal-scaffold": "^2.0.0",
+        "behat/behat": "^3.0",
+        "phing/phing": "^2.14",
+        "behat/mink": "~1.7",
+        "behat/mink-goutte-driver": "~1.2",
+        "jcalderonzumba/gastonjs": "~1.0.2",
+        "mikey179/vfsStream": "~1.2",
+        "phpunit/phpunit": "~4.8",
+        "symfony/css-selector": "~2.8",
+        "drupal/devel": "^1.0",
+        "squizlabs/php_codesniffer": "2.*",
+        "se/selenium-server-standalone": "^2.53"
+    }
 }
