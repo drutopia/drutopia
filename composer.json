@@ -1,5 +1,5 @@
 {
-    "name": "drupal/drutopia",
+    "name": "Drutopia/drutopia",
     "description": "Drutopia's base distribution provides an enhanced starting place for building sites for grassroots organizations and other purposes.",
     "type": "drupal-profile",
     "license": "GPL-2.0+",
