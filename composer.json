@@ -12,21 +12,22 @@
         }
     ],
     "scripts": {
+        "drupal-scaffold": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold",
         "post-install-cmd": [
-            "@composer drupal-scaffold"
+            "@composer drupal-scaffold",
+            "./bin/phing push"
         ],
-        "drupal-scaffold": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold"
+        "post-update-cmd": [
+            "./bin/phing push"
+        ]
     },
     "extra": {
-        "patches": {
-            "drupal/core": {
-                "Fix region string issue": "https://www.drupal.org/files/issues/2724283-block-22.patch",
-                "Make sure exposed filters work": "https://www.drupal.org/files/issues/2369119-120.patch",
-                "Redirect to install.php on empty DB": "https://www.drupal.org/files/issues/728702-163.patch",
-                "Clean up user input for exposed checkboxes": "https://www.drupal.org/files/issues/2687773-18-Cleanup-user-input-for-checkboxes-8.2.patch",
-                "views_query_views_alter does not handle IN queries": "https://www.drupal.org/files/issues/2744069-5-views-in-queries.patch",
-                "Color module html preview optional": "https://www.drupal.org/files/issues/color-optional-html-preview-2844190-2.patch"
-            }
+        "installer-paths": {
+            "web/core": ["type:drupal-core"],
+            "web/profiles/{$name}": ["type:drupal-profile"],
+            "web/modules/contrib/{$name}": ["type:drupal-module"],
+            "web/themes/{$name}": ["type:drupal-theme"],
+            "drush/contrib/{$name}": ["type:drupal-drush"]
         }
     },
     "require": {
@@ -43,5 +44,20 @@
         "drupal/drutopia_page": "1.x-dev",
         "drupal/drutopia_site": "1.x-dev",
         "drupal/drutopia_user": "1.x-dev"
-    }
+  },
+  "require-dev": {
+      "drush/drush": "^8.0",
+      "drupal/drupal-extension": "^3.2",
+      "drupal-composer/drupal-scaffold": "^2.0.0",
+      "behat/behat": "^3.0",
+      "phing/phing": "^2.14",
+      "behat/mink": "~1.7",
+      "behat/mink-goutte-driver": "~1.2",
+      "jcalderonzumba/gastonjs": "~1.0.2",
+      "mikey179/vfsStream": "~1.2",
+      "phpunit/phpunit": "~4.8",
+      "symfony/css-selector": "~2.8",
+      "drupal/devel": "^1.0",
+      "squizlabs/php_codesniffer": "2.*",
+      "se/selenium-server-standalone": "^2.53"
 }
