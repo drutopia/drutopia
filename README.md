@@ -8,4 +8,4 @@ Then take note of the [technical guide](https://gitlab.com/drutopia/drutopia/wik
 
 # Documentation
 
-You can find [meeting notes](https://gitlab.com/drutopia/drutopia/wikis/meeting-notes) and other important documents in the [project's wiki](https://gitlab.com/drutopia/drutopia/wikis/home).
+You can find [meeting notes](https://gitlab.com/drutopia/drutopia-organization/wikis/meeting-notes) and other important documents in the [project's wiki](https://gitlab.com/drutopia/drutopia/wikis/home).
