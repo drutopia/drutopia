@@ -15,7 +15,7 @@ Hello and welcome to the Drutopia project! We’re excited to have you here. The
 Reading this document right here is great and all, but we also encourage contributors to join the conversation through video calls and IRC conversations too.
 
 ## General Meetings
-- We have general meetings every Third Tuesday from 1:00-2:00 EST.
+- We have general meetings every Third Tuesday from 12:00-1:00 EST.
 
 You’ll need Zoom.
 
