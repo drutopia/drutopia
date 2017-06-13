@@ -3,17 +3,18 @@ status: true
 dependencies: {  }
 name: Drutopia
 machine_name: drutopia
-description: ''
+description: 'Provides default settings for the Drutopia distribution.'
 assignments:
   base:
     types:
       config:
         comment_type: comment_type
         node_type: node_type
+        group_type: group_type
       content:
         user: user
     enabled: true
-    weight: '-18'
+    weight: -18
   core:
     types:
       config:
@@ -22,55 +23,59 @@ assignments:
         entity_form_mode: entity_form_mode
         image_style: image_style
         menu: menu
+        paragraphs_type: paragraphs_type
         responsive_image_style: responsive_image_style
         user_role: user_role
         entity_view_mode: entity_view_mode
     enabled: true
-    weight: '-15'
+    weight: -15
   dependency:
     enabled: true
-    weight: '-10'
+    weight: -10
   exclude:
     types:
       config: {  }
-    curated: 1
+    curated: true
     module:
-      installed: 1
-      profile: 1
-      namespace: 1
-      namespace_any: 0
+      installed: true
+      profile: true
+      namespace: true
+      namespace_any: false
     enabled: true
-    weight: '-19'
+    weight: -19
   existing:
     enabled: true
-    weight: '-11'
+    weight: -11
   forward_dependency:
     enabled: true
-    weight: '-12'
+    weight: -12
   namespace:
     enabled: true
-    weight: '-17'
+    weight: -17
   optional:
     types:
-      config: {  }
+      config:
+        features_bundle: features_bundle
     enabled: true
-    weight: '-16'
+    weight: -16
   packages:
     enabled: true
-    weight: '-20'
+    weight: -20
   profile:
-    curated: 1
+    curated: true
     standard:
-      files: 1
-      dependencies: 1
+      files: true
+      dependencies: true
     types:
       config:
         block: block
-        features_bundle: features_bundle
+        language_content_settings: language_content_settings
+        configurable_language: configurable_language
+        migration: migration
         shortcut_set: shortcut_set
         tour: tour
     enabled: true
-    weight: '-13'
+    weight: -13
   site:
     types:
       config:
@@ -83,6 +88,12 @@ assignments:
         editor: editor
         filter_format: filter_format
     enabled: true
-    weight: '-14'
+    weight: -14
+  alter:
+    core: true
+    uuid: true
+    user_permissions: true
+    enabled: true
+    weight: 0
 profile_name: drutopia
 is_profile: true
