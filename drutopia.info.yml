@@ -15,6 +15,7 @@ dependencies:
   - contextual
   - datetime
   - dblog
+  - default_content
   - drutopia_core
   - drutopia_site
   - dynamic_page_cache
