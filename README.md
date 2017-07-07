@@ -2,7 +2,7 @@ The Drutopia distribution is the flagship libre software product of the [Drutopi
 
 # Contributing
 
-We'd love for you to get involved! First review our [Contributing Guide](http://docs.drutopia.org/en/latest/contributing-doc.html)
+We'd love for you to get involved! First review our [Contributing Guide](http://docs.drutopia.org/en/latest/contributing.html)
 
 Then take note of the [technical guide](http://docs.drutopia.org/en/latest/technical-guide.html) and [criteria for extensions](http://docs.drutopia.org/en/latest/extension-criteria-and-candidates.html) when contributing.
 
