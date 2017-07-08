@@ -18,20 +18,8 @@ dependencies:
   - datetime
   - dblog
   - default_content
-  - drutopia_action
-  - drutopia_article
-  - drutopia_blog
-  - drutopia_campaign
-  - drutopia_comment
   - drutopia_core
-  - drutopia_event
-  - drutopia_group
-  - drutopia_page
-  - drutopia_people
-  - drutopia_search
   - drutopia_site
-  - drutopia_social
-  - drutopia_user
   - dynamic_page_cache
   - editor
   - field_ui
@@ -49,6 +37,7 @@ dependencies:
   - rdf
   - search
   - shortcut
+  - subprofiles
   - system
   - taxonomy
   - toolbar
