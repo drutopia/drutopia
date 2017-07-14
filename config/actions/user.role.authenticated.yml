@@ -1,0 +1,8 @@
+path:
+  - permissions
+plugin: add
+actions:
+  'access shortcuts':
+    value: 'access shortcuts'
+  'access site-wide contact form':
+    value: 'access site-wide contact form'

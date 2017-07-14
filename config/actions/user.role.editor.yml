@@ -1,0 +1,17 @@
+path:
+  - permissions
+plugin: add
+actions:
+  'access contextual links':
+    value: 'access contextual links'
+  'access in-place editing':
+    value: 'access in-place editing'
+  'access toolbar':
+    value: 'access toolbar'
+  'access tour':
+    value: 'access tour'
+  'bypass node access':
+    value: 'bypass node access'
+  'create url aliases':
+    value: 'create url aliases'
+
