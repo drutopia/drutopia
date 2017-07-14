@@ -1,0 +1,8 @@
+path:
+  - permissions
+plugin: add
+actions:
+  'access contextual links':
+    value: 'access contextual links'
+  'access in-place editing':
+    value: 'access in-place editing'

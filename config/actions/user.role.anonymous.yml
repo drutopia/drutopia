@@ -1,0 +1,6 @@
+path:
+  - permissions
+plugin: add
+actions:
+  'access site-wide contact form':
+    value: 'access site-wide contact form'
