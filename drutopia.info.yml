@@ -27,7 +27,9 @@ dependencies:
   - drutopia_group
   - drutopia_page
   - drutopia_people
+  - drutopia_search
   - drutopia_site
+  - drutopia_social
   - drutopia_user
   - dynamic_page_cache
   - editor
