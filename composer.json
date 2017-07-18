@@ -68,5 +68,15 @@
         "drupal/devel": "^1.0",
         "squizlabs/php_codesniffer": "2.*",
         "se/selenium-server-standalone": "^2.53"
+    },
+    "extra": {
+        "patches": {
+            "drupal/features": {
+                "'excluded' property not set in *.features.yml": "https://www.drupal.org/files/issues/features-excluded-2860993-4.patch"
+            },
+            "drupal/features": {
+                "'excluded' configuration should not be automatically packaged": "https://www.drupal.org/files/issues/features-exclude-2891353-2.patch"
+            }
+        }
     }
 }
