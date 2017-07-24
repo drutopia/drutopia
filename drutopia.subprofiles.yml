@@ -1,0 +1,64 @@
+modules:
+  drutopia_action:
+    name: 'Drutopia Action'
+    description: 'Provides Action content type and related configuration. An <em>action</em> is a specific, single action a user can take.'
+  drutopia_article:
+    name: 'Drutopia Article'
+    description: 'Provides Article content type and related configuration. Use <em>articles</em> for time-sensitive content like news, press releases or blog posts.'
+  drutopia_blog:
+    name: 'Drutopia Blog'
+    description: 'Provide Blog content type and related configuration. Use <em>blog</em> for personal or journal-like posts.'
+  drutopia_campaign:
+    name: 'Drutopia Campaign'
+    description: 'Provides Campaign content type and related configuration. A <em>campaign</em> includes background information as well as ability to list demands and updates.'
+  drutopia_comment:
+    name: 'Default comments'
+    description: 'Provides Default comments comment type and related configuration. Allows commenting on content'
+  drutopia_event:
+    name: 'Drutopia Event'
+    description: 'Provides Event content type and related configuration. An <em>event</em> contains a date.'
+  drutopia_group:
+    name: 'Drutopia Group'
+    description: 'Provides a basic group type that can be classified by a group type vocabulary.'
+  drutopia_page:
+    name: 'Basic page'
+    description: 'Provides Basic page content type and related configuration. Use <em>basic pages</em> for your static content, such as an ''About us'' page.'
+  drutopia_people:
+    name: 'Drutopia People'
+    description: 'Provides People content type and related configuration. Use <em>people</em> content type for showing visitors information about people such as staff, volunteers, contributors.'
+  drutopia_search:
+    name: 'Drutopia Search'
+    description: 'Provides a search server, index, and view.'
+  drutopia_social:
+    name: 'Drutopia Social'
+    description: 'Provides a social media block.'
+  drutopia_user:
+    name: 'Drutopia User'
+    description: 'Provide User related configuration.'
+subprofiles:
+  standard:
+    name: 'Engage'
+    description: 'Install Drutopia with features for small nonprofits and community organizations'
+    modules:
+      drutopia_article: true
+      drutopia_blog: true
+      drutopia_comment: true
+      drutopia_event: false
+      drutopia_page: true
+      drutopia_people: true
+      drutopia_social: false
+      drutopia_search: false
+      drutopia_user: true
+  eventful:
+    name: 'Eventful'
+    description: 'Put on events'
+    modules:
+      drutopia_action: true
+      drutopia_article: true
+      drutopia_campaign: true
+      drutopia_comment: false
+      drutopia_group: false
+      drutopia_event: true
+      drutopia_page: true
+      drutopia_social: true
+      drutopia_search: true

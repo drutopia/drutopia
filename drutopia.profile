@@ -2,11 +2,16 @@
 
 /**
  * @file
- * Enables modules and site configuration for a drutopia site installation.
+ * Enables modules and site configuration for a Drutopia site installation.
  */
 
 use Drupal\contact\Entity\ContactForm;
 use Drupal\Core\Form\FormStateInterface;
+
+// Include only when in install mode.
+if (drupal_installation_attempted()) {
+  include_once('drutopia.install.inc');
+}
 
 /**
  * Implements hook_form_FORM_ID_alter() for install_configure_form().
