@@ -35,7 +35,6 @@ dependencies:
   - path
   - quickedit
   - rdf
-  - search
   - shortcut
   - subprofiles
   - system
