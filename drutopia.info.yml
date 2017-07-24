@@ -47,7 +47,6 @@ dependencies:
   - path
   - quickedit
   - rdf
-  - search
   - shortcut
   - system
   - taxonomy
