@@ -53,7 +53,8 @@
         "drupal/drutopia_search": "1.x-dev",
         "drupal/drutopia_site": "1.x-dev",
         "drupal/drutopia_social": "1.x-dev",
-        "drupal/drutopia_user": "1.x-dev"
+        "drupal/drutopia_user": "1.x-dev",
+        "drupal/octavia": "1.x-dev"
     },
     "require-dev": {
         "drush/drush": "^8.0",
