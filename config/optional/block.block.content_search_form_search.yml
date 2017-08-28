@@ -1,0 +1,29 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_visibility_groups.block_visibility_group.search
+    - views.view.search
+  module:
+    - block_visibility_groups
+    - views
+  theme:
+    - octavia
+id: content_search_form_search
+theme: octavia
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'views_exposed_filter_block:search-page_1'
+settings:
+  id: 'views_exposed_filter_block:search-page_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: search
+    context_mapping: {  }
