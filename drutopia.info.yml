@@ -45,7 +45,7 @@ dependencies:
   - views
   - views_ui
 themes:
-  - bartik
+  - octavia
   - seven
 package: Drutopia
 distribution:
