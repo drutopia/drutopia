@@ -10,7 +10,7 @@ dependencies:
     - octavia
 id: content_search_form_global
 theme: octavia
-region: footer
+region: header_search
 weight: 0
 provider: null
 plugin: 'views_exposed_filter_block:search-page_1'
