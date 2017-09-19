@@ -49,6 +49,7 @@
         "drupal/drutopia_core": "1.x-dev",
         "drupal/drutopia_event": "1.x-dev",
         "drupal/drutopia_group": "1.x-dev",
+        "drupal/drutopia_landing_page": "1.x-dev",
         "drupal/drutopia_page": "1.x-dev",
         "drupal/drutopia_people": "1.x-dev",
         "drupal/drutopia_search": "1.x-dev",
