@@ -20,6 +20,7 @@ dependencies:
   - dblog
   - default_content
   - drutopia_core
+  - drutopia_seo
   - drutopia_site
   - dynamic_page_cache
   - editor
