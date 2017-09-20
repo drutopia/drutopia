@@ -32,6 +32,7 @@ modules:
   drutopia_search:
     name: 'Drutopia Search'
     description: 'Provides a search server, index, and view.'
+# drutopia_seo is intentionally excluded since it's enabled by default.
   drutopia_social:
     name: 'Drutopia Social'
     description: 'Provides a social media block.'
@@ -43,10 +44,13 @@ subprofiles:
     name: 'Engage'
     description: 'Install Drutopia with features for small nonprofits and community organizations'
     modules:
+      drutopia_action: false
       drutopia_article: true
       drutopia_blog: true
+      drutopia_campaign: false
       drutopia_comment: true
       drutopia_event: false
+      drutopia_group: false
       drutopia_landing_page: true
       drutopia_page: true
       drutopia_people: true
@@ -59,11 +63,14 @@ subprofiles:
     modules:
       drutopia_action: true
       drutopia_article: true
+      drutopia_blog: false
       drutopia_campaign: true
       drutopia_comment: false
-      drutopia_group: false
       drutopia_event: true
+      drutopia_group: false
       drutopia_landing_page: true
       drutopia_page: true
-      drutopia_social: true
+      drutopia_people: true
       drutopia_search: true
+      drutopia_social: true
+      drutopia_user: true
