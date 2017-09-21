@@ -12,8 +12,8 @@ modules:
     name: 'Drutopia Campaign'
     description: 'Provides Campaign content type and related configuration. A <em>campaign</em> includes background information as well as ability to list demands and updates.'
   drutopia_comment:
-    name: 'Default comments'
-    description: 'Provides Default comments comment type and related configuration. Allows commenting on content'
+    name: 'Drutopia Comment'
+    description: 'Provides comments and related configuration.'
   drutopia_event:
     name: 'Drutopia Event'
     description: 'Provides Event content type and related configuration. An <em>event</em> contains a date.'
@@ -27,7 +27,7 @@ modules:
     name: 'Drutopia Landing Page'
     description: 'Provides Landing page content type and related configuration. Landing pages can be used for custom pages such as the home page.'
   drutopia_page:
-    name: 'Basic page'
+    name: 'Drutopia Page'
     description: 'Provides Basic page content type and related configuration. Use <em>basic pages</em> for your static content, such as an ''About us'' page.'
   drutopia_people:
     name: 'Drutopia People'
