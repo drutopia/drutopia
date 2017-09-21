@@ -1,0 +1,119 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/block\/2?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/block_content\/slide"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/block_content\/slide\/revision_user": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/block_content\/slide\/field_slide": [
+            {
+                "href": ""
+            }
+        ]
+    },
+    "id": [
+        {
+            "value": 2
+        }
+    ],
+    "uuid": [
+        {
+            "value": "2b547200-6da3-4608-aa40-b98a6bea4933"
+        }
+    ],
+    "revision_id": [
+        {
+            "value": 11
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en",
+            "lang": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "slide"
+        }
+    ],
+    "info": [
+        {
+            "value": "Home page feature",
+            "lang": "en"
+        }
+    ],
+    "changed": [
+        {
+            "value": 1505930548,
+            "lang": "en"
+        }
+    ],
+    "revision_created": [
+        {
+            "value": 1505930548
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/block_content\/slide\/revision_user": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "d6b037f5-615e-4f1a-bfb1-5b5f14d6d45f"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/block_content\/slide\/field_slide": [
+            {
+                "_links": {
+                    "self": {
+                        "href": ""
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/paragraph\/slide"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "d755bc8f-ace2-4ac2-a8b1-f9f0f635d4af"
+                    }
+                ],
+                "target_revision_id": "344"
+            }
+        ]
+    },
+    "revision_translation_affected": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "metatag": [
+        {
+            "value": {
+                "title": "| Drutopia Octavia"
+            }
+        }
+    ]
+}

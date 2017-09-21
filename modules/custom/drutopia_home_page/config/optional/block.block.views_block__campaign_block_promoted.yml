@@ -1,0 +1,30 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_visibility_groups.block_visibility_group.home_page
+    - views.view.campaign
+  module:
+    - block_visibility_groups
+    - views
+  theme:
+    - octavia
+id: views_block__campaign_block_promoted
+theme: octavia
+region: content
+weight: 8
+provider: null
+plugin: 'views_block:campaign-block_promoted'
+settings:
+  id: 'views_block:campaign-block_promoted'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: home_page
+    context_mapping: {  }

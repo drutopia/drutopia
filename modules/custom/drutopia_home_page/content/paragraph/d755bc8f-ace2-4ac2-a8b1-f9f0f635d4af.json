@@ -1,0 +1,171 @@
+{
+    "_links": {
+        "self": {
+            "href": ""
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/paragraph\/slide"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/slide\/uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json",
+                "lang": "en"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/slide\/revision_uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/slide\/field_image": [
+            {
+                "href": "http:\/\/default\/sites\/default\/files\/2017-09\/fall_aster_0.JPG",
+                "lang": "en"
+            }
+        ]
+    },
+    "id": [
+        {
+            "value": 196
+        }
+    ],
+    "uuid": [
+        {
+            "value": "d755bc8f-ace2-4ac2-a8b1-f9f0f635d4af"
+        }
+    ],
+    "revision_id": [
+        {
+            "value": 344
+        }
+    ],
+    "type": [
+        {
+            "target_id": "slide"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en",
+            "lang": "en"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/slide\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "d6b037f5-615e-4f1a-bfb1-5b5f14d6d45f"
+                    }
+                ],
+                "lang": "en"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/slide\/revision_uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "d6b037f5-615e-4f1a-bfb1-5b5f14d6d45f"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/slide\/field_image": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/sites\/default\/files\/2017-09\/fall_aster_0.JPG"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/file\/file"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "b28b288b-9ab3-4501-8e8f-03859f4e9a49"
+                    }
+                ],
+                "lang": "en",
+                "alt": "Fall asters",
+                "title": "",
+                "width": "1500",
+                "height": "752"
+            }
+        ]
+    },
+    "status": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "created": [
+        {
+            "value": 1505925014,
+            "lang": "en"
+        }
+    ],
+    "parent_id": [
+        {
+            "value": "2"
+        }
+    ],
+    "parent_type": [
+        {
+            "value": "block_content"
+        }
+    ],
+    "parent_field_name": [
+        {
+            "value": "field_slide"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": "a:0:{}"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "metatag": [
+        {
+            "value": {
+                "title": "| Drutopia Octavia"
+            }
+        }
+    ],
+    "field_link": [
+        {
+            "uri": "internal:\/node\/1",
+            "title": "Link to a page",
+            "options": []
+        }
+    ],
+    "field_text": [
+        {
+            "value": "<p>This block on the home page lets you easily highlight any piece of content or landing page on your site. You can easily update the image, this text and the link to where it points.<\/p>\r\n",
+            "format": "basic_html",
+            "lang": "en"
+        }
+    ]
+}

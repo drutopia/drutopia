@@ -1,0 +1,171 @@
+{
+    "_links": {
+        "self": {
+            "href": ""
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/paragraph\/slide"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/slide\/uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json",
+                "lang": "en"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/slide\/revision_uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/slide\/field_image": [
+            {
+                "href": "http:\/\/default\/sites\/default\/files\/2017-09\/cherry_tomatoes_1.JPG",
+                "lang": "en"
+            }
+        ]
+    },
+    "id": [
+        {
+            "value": 197
+        }
+    ],
+    "uuid": [
+        {
+            "value": "61b303ee-97a6-4d6f-9f5d-4f09f57d8b73"
+        }
+    ],
+    "revision_id": [
+        {
+            "value": 343
+        }
+    ],
+    "type": [
+        {
+            "target_id": "slide"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en",
+            "lang": "en"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/slide\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "d6b037f5-615e-4f1a-bfb1-5b5f14d6d45f"
+                    }
+                ],
+                "lang": "en"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/slide\/revision_uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "d6b037f5-615e-4f1a-bfb1-5b5f14d6d45f"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/slide\/field_image": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/sites\/default\/files\/2017-09\/cherry_tomatoes_1.JPG"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/file\/file"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "2e1cce45-81f8-47d7-b791-90deebc07613"
+                    }
+                ],
+                "lang": "en",
+                "alt": "Yellow cherry tomatoes.",
+                "title": "",
+                "width": "1500",
+                "height": "750"
+            }
+        ]
+    },
+    "status": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "created": [
+        {
+            "value": 1505926076,
+            "lang": "en"
+        }
+    ],
+    "parent_id": [
+        {
+            "value": "3"
+        }
+    ],
+    "parent_type": [
+        {
+            "value": "block_content"
+        }
+    ],
+    "parent_field_name": [
+        {
+            "value": "field_slide"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": "a:0:{}"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "metatag": [
+        {
+            "value": {
+                "title": "| Drutopia Octavia"
+            }
+        }
+    ],
+    "field_link": [
+        {
+            "uri": "entity:node\/1",
+            "title": "Learn more",
+            "options": []
+        }
+    ],
+    "field_text": [
+        {
+            "value": "<p>This is where you should write a brief (one to two sentence) description of your organization. By default this will link to the standard About us page. You can easily upload your own image, update the text and link for this hero block.<\/p>\r\n",
+            "format": "basic_html",
+            "lang": "en"
+        }
+    ]
+}

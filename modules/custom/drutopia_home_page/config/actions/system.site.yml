@@ -1,0 +1,7 @@
+path:
+  - page
+  - front
+plugin: change
+actions:
+  home_page:
+    value: '/home-page'

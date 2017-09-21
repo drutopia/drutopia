@@ -1,0 +1,12 @@
+name: 'Drutopia Home Page'
+description: 'Provides a home page for Drutopia.'
+type: module
+core: 8.x
+package: Drutopia
+dependencies:
+  - block
+  - block_content
+  - block_visibility_groups
+  - drutopia_landing_page
+  - system
+  - views

@@ -20,6 +20,9 @@ modules:
   drutopia_group:
     name: 'Drutopia Group'
     description: 'Provides a basic group type that can be classified by a group type vocabulary.'
+  drutopia_home_page:
+    name: 'Drutopia Home Page'
+    description: 'Provides a home page for Drutopia.'
   drutopia_landing_page:
     name: 'Drutopia Landing Page'
     description: 'Provides Landing page content type and related configuration. Landing pages can be used for custom pages such as the home page.'
@@ -51,6 +54,7 @@ subprofiles:
       drutopia_comment: true
       drutopia_event: false
       drutopia_group: false
+      drutopia_home_page: true
       drutopia_landing_page: true
       drutopia_page: true
       drutopia_people: true
@@ -68,6 +72,7 @@ subprofiles:
       drutopia_comment: false
       drutopia_event: true
       drutopia_group: false
+      drutopia_home_page: true
       drutopia_landing_page: true
       drutopia_page: true
       drutopia_people: true

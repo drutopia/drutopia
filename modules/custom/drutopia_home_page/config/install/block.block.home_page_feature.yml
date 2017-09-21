@@ -1,0 +1,32 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_visibility_groups.block_visibility_group.home_page
+  content:
+    - 'block_content:slide:2b547200-6da3-4608-aa40-b98a6bea4933'
+  module:
+    - block_content
+    - block_visibility_groups
+  theme:
+    - octavia
+id: home_page_feature
+theme: octavia
+region: content
+weight: 4
+provider: null
+plugin: 'block_content:2b547200-6da3-4608-aa40-b98a6bea4933'
+settings:
+  id: 'block_content:2b547200-6da3-4608-aa40-b98a6bea4933'
+  label: 'Home page feature'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: home_page
+    context_mapping: {  }
