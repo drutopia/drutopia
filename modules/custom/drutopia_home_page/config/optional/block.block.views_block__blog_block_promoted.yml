@@ -6,6 +6,7 @@ dependencies:
     - views.view.blog
   module:
     - block_visibility_groups
+    - drutopia_blog
     - views
   theme:
     - octavia
