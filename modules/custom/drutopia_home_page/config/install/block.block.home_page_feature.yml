@@ -3,13 +3,13 @@ status: true
 dependencies:
   config:
     - block_visibility_groups.block_visibility_group.home_page
-  content:
-    - 'block_content:slide:2b547200-6da3-4608-aa40-b98a6bea4933'
   module:
-    - block_content
     - block_visibility_groups
   theme:
     - octavia
+  enforced:
+    module:
+      - block_content
 id: home_page_feature
 theme: octavia
 region: content
