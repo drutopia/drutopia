@@ -1,21 +1,35 @@
-langcode: 'en'
-status: TRUE
+langcode: en
+status: true
 dependencies:
   module:
-    - 'group'
+    - block_visibility_groups
+    - ctools
+    - group
   theme:
-    - 'octavia'
-id: 'group_operations'
-theme: 'octavia'
-region: 'sidebar_first'
+    - octavia
+id: group_operations
+theme: octavia
+region: sidebar_first
 weight: -20
-provider: NULL
-plugin: 'group_operations'
+provider: null
+plugin: group_operations
 settings:
-  id: 'group_operations'
+  id: group_operations
   label: 'Group operations'
-  provider: 'group'
-  label_display: 'visible'
+  provider: group
+  label_display: visible
   context_mapping:
     group: '@group.group_route_context:group'
-visibility: {}
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }
+  'entity_bundle:group':
+    id: 'entity_bundle:group'
+    bundles:
+      group: group
+    negate: false
+    context_mapping:
+      group: '@group.group_route_context:group'
