@@ -6,10 +6,12 @@ dependencies:
     - views.view.action
   module:
     - block_visibility_groups
-    - drutopia_action
     - views
   theme:
     - octavia
+  enforced:
+    module:
+      - drutopia_action
 id: views_block__action_block_promoted
 theme: octavia
 region: content

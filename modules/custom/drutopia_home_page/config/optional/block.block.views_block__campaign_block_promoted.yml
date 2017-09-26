@@ -6,10 +6,12 @@ dependencies:
     - views.view.campaign
   module:
     - block_visibility_groups
-    - drutopia_campaign
     - views
   theme:
     - octavia
+  enforced:
+    module:
+      - drutopia_campaign
 id: views_block__campaign_block_promoted
 theme: octavia
 region: content
