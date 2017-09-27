@@ -80,9 +80,7 @@
     "extra": {
         "patches": {
             "drupal/features": {
-                "'excluded' property not set in *.features.yml": "https://www.drupal.org/files/issues/features-excluded-2860993-4.patch"
-            },
-            "drupal/features": {
+                "'excluded' property not set in *.features.yml": "https://www.drupal.org/files/issues/features-excluded-2860993-4.patch",
                 "'excluded' configuration should not be automatically packaged": "https://www.drupal.org/files/issues/features-exclude-2891353-2.patch"
             }
         }
