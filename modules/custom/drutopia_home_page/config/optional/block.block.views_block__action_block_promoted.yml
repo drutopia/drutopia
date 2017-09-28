@@ -9,9 +9,6 @@ dependencies:
     - views
   theme:
     - octavia
-  enforced:
-    module:
-      - drutopia_action
 id: views_block__action_block_promoted
 theme: octavia
 region: content
