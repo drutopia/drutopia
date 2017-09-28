@@ -14,6 +14,7 @@ dependencies:
   - components
   - config
   - config_actions
+  - config_sync
   - contact
   - contextual
   - datetime
