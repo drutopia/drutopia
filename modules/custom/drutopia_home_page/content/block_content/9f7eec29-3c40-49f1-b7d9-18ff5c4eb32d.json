@@ -17,19 +17,9 @@
             }
         ]
     },
-    "id": [
-        {
-            "value": 3
-        }
-    ],
     "uuid": [
         {
             "value": "9f7eec29-3c40-49f1-b7d9-18ff5c4eb32d"
-        }
-    ],
-    "revision_id": [
-        {
-            "value": 10
         }
     ],
     "langcode": [

@@ -24,19 +24,9 @@
             }
         ]
     },
-    "id": [
-        {
-            "value": 197
-        }
-    ],
     "uuid": [
         {
             "value": "61b303ee-97a6-4d6f-9f5d-4f09f57d8b73"
-        }
-    ],
-    "revision_id": [
-        {
-            "value": 343
         }
     ],
     "type": [
@@ -156,7 +146,7 @@
     ],
     "field_link": [
         {
-            "uri": "entity:node\/1",
+            "uri": "internal:\/about",
             "title": "Learn more",
             "options": []
         }
