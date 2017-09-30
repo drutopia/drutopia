@@ -1,0 +1,6 @@
+services:
+  drutopia_home_page.default_content_import_subscriber:
+    class: Drupal\drutopia_home_page\EventSubscriber\DefaultContentImportSubscriber
+    arguments: ['@exclude_node_title.manager']
+    tags:
+      - { name: event_subscriber }
