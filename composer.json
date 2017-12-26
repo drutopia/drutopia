@@ -55,7 +55,7 @@
         "drupal/drutopia_people": "^1.0-alpha1",
         "drupal/drutopia_search": "^1.0-alpha1",
         "drupal/drutopia_seo": "^1.0-alpha1",
-        "drupal/drutopia_site": "^1.0-alpha1",
+        "drupal/drutopia_site": "^1.0-alpha2",
         "drupal/drutopia_social": "^1.0-alpha1",
         "drupal/drutopia_user": "^1.0-alpha1",
         "drupal/features": "^3.5",
