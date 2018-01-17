@@ -32,6 +32,9 @@ modules:
   drutopia_people:
     name: 'Drutopia People'
     description: 'Provides People content type and related configuration. Use <em>people</em> content type for showing visitors information about people such as staff, volunteers, contributors.'
+  drutopia_resource:
+    name: 'Drutopia Resource'
+    description: 'Provides Resource content type and related configuration. A resource can be either a file, such as a PDF, or a link, such as a website URL.'
   drutopia_search:
     name: 'Drutopia Search'
     description: 'Provides a search server, index, and view.'
@@ -58,6 +61,7 @@ subprofiles:
       drutopia_landing_page: true
       drutopia_page: true
       drutopia_people: true
+      drutopia_resource: true
       drutopia_social: false
       drutopia_search: false
       drutopia_user: true
@@ -76,6 +80,7 @@ subprofiles:
       drutopia_landing_page: true
       drutopia_page: true
       drutopia_people: true
+      drutopia_resource: false
       drutopia_search: true
       drutopia_social: true
       drutopia_user: true
