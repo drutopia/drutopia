@@ -42,6 +42,9 @@ modules:
   drutopia_social:
     name: 'Drutopia Social'
     description: 'Provides a social media block.'
+  drutopia_storyline:
+    name: 'Drutopia Storyline'
+    description: 'Provides Storyline paragraphs.'
   drutopia_user:
     name: 'Drutopia User'
     description: 'Provide User related configuration.'
@@ -64,6 +67,7 @@ subprofiles:
       drutopia_resource: true
       drutopia_social: false
       drutopia_search: false
+      drutopia_storyline: true
       drutopia_user: true
   eventful:
     name: 'Eventful'
@@ -83,4 +87,5 @@ subprofiles:
       drutopia_resource: false
       drutopia_search: true
       drutopia_social: true
+      drutopia_storyline: false
       drutopia_user: true
