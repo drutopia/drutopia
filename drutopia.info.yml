@@ -13,7 +13,7 @@ dependencies:
   - comment
   - components
   - config
-  - config_actions
+  - config_actions_provider
   - config_sync
   - contact
   - contextual
