@@ -38,8 +38,8 @@
         "drupal/better_normalizers": "^1.0-beta3",
         "drupal/block_visibility_groups": "^1.1",
         "drupal/components": "^1.0",
-        "drupal/config_provider": "^1.0-alpha4",
-        "drupal/config_sync": "^1.0-alpha4",
+        "drupal/config_actions_provider": "^1.0-alpha2",
+        "drupal/config_sync": "^2.0-alpha4",
         "drupal/config_update": "^1.3",
         "drupal/default_content": "^1.0-alpha6",
         "drupal/drutopia_action": "^1.0-alpha1",
@@ -53,11 +53,13 @@
         "drupal/drutopia_landing_page": "^1.0-alpha1",
         "drupal/drutopia_page": "^1.0-alpha1",
         "drupal/drutopia_people": "^1.0-alpha1",
+        "drupal/drutopia_related_content": "^1.0-alpha1",
         "drupal/drutopia_resource": "^1.0-alpha1",
         "drupal/drutopia_search": "^1.0-alpha1",
         "drupal/drutopia_seo": "^1.0-alpha1",
         "drupal/drutopia_site": "^1.0-alpha2",
         "drupal/drutopia_social": "^1.0-alpha1",
+        "drupal/drutopia_storyline": "^1.0-alpha1",
         "drupal/drutopia_user": "^1.0-alpha1",
         "drupal/features": "^3.5",
         "drupal/paranoia": "^1.0-alpha1",
@@ -80,13 +82,5 @@
         "drupal/devel": "^1.0",
         "squizlabs/php_codesniffer": "2.*",
         "se/selenium-server-standalone": "^2.53"
-    },
-    "extra": {
-        "patches": {
-            "drupal/features": {
-                "'excluded' property not set in *.features.yml": "https://www.drupal.org/files/issues/features-excluded-2860993-4.patch",
-                "'excluded' configuration should not be automatically packaged": "https://www.drupal.org/files/issues/features-exclude-2891353-2.patch"
-            }
-        }
     }
 }

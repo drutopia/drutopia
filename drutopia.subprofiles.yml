@@ -32,6 +32,9 @@ modules:
   drutopia_people:
     name: 'Drutopia People'
     description: 'Provides People content type and related configuration. Use <em>people</em> content type for showing visitors information about people such as staff, volunteers, contributors.'
+  drutopia_related_content:
+    name: 'Drutopia Related Content'
+    description: 'Provides related content on node pages generated via similar terms.'
   drutopia_resource:
     name: 'Drutopia Resource'
     description: 'Provides Resource content type and related configuration. A resource can be either a file, such as a PDF, or a link, such as a website URL.'
@@ -42,6 +45,9 @@ modules:
   drutopia_social:
     name: 'Drutopia Social'
     description: 'Provides a social media block.'
+  drutopia_storyline:
+    name: 'Drutopia Storyline'
+    description: 'Provides Storyline paragraphs.'
   drutopia_user:
     name: 'Drutopia User'
     description: 'Provide User related configuration.'
@@ -61,9 +67,11 @@ subprofiles:
       drutopia_landing_page: true
       drutopia_page: true
       drutopia_people: true
+      drutopia_related_content: true
       drutopia_resource: true
       drutopia_social: false
       drutopia_search: false
+      drutopia_storyline: true
       drutopia_user: true
   eventful:
     name: 'Eventful'
@@ -80,7 +88,9 @@ subprofiles:
       drutopia_landing_page: true
       drutopia_page: true
       drutopia_people: true
+      drutopia_related_content: false
       drutopia_resource: false
       drutopia_search: true
       drutopia_social: true
+      drutopia_storyline: false
       drutopia_user: true
