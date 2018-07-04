@@ -7,13 +7,12 @@ Thank you for requesting a feature to Drutopia. To help us consider your request
 ## Description
 Write your feature request in the form of a user story -
 
-Given that I am a  [user role],
-when I [action],
-then I [result],
+Given that I am a  [user role],  
+when I [action],  
+then I [result],  
 so that [reason].
 
 ## Additional Notes
 
 
-/label ~Feature+Request
 /assign @cedewey
