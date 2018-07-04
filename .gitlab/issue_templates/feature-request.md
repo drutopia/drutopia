@@ -15,5 +15,5 @@ so that [reason].
 ## Additional Notes
 
 
-/label ~Feature Request
+/label ~Feature+Request
 /assign @cedewey
