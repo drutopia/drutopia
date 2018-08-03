@@ -25,9 +25,11 @@ Check off when a release is made or if there is no need to make a release.
 * [ ] Drutopia Landing Page
 * [ ] Drutopia Page
 * [ ] Drutopia People
+* [ ] Drutopia Related Content
 * [ ] Drutopia Resources
 * [ ] Drutopia Search
 * [ ] Drutopia SEO
+* [ ] Drutopia Site
 * [ ] Drutopia Social
 * [ ] Drutopia Storyline
 * [ ] Drutopia User
