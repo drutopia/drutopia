@@ -22,6 +22,7 @@ Check off when a release is made or if there is no need to make a release.
 * [ ] Drutopia Core
 * [ ] Drutopia Event
 * [ ] Drutopia Group
+* [ ] Drutopia Landing Page
 * [ ] Drutopia Page
 * [ ] Drutopia People
 * [ ] Drutopia Resources
