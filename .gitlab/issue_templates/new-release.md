@@ -30,7 +30,6 @@ Check off when a release is made or if there is no need to make a release.
 * [ ] Drutopia SEO
 * [ ] Drutopia Social
 * [ ] Drutopia Storyline
-* [ ] Drutopia Template
 * [ ] Drutopia User
 * [ ] Octavia
 
@@ -40,8 +39,12 @@ Check off when a release is made or if there is no need to make a release.
 
 ### Tag and release
 
-* [ ] New release of Drutopia distribution issued
-* [ ] Technical release notes pasted into [Drutopia releases](https://gitlab.com/drutopia/documentation/edit/master/drutopia-releases.md)
+* [ ] Create new release of Drutopia distribution
+* [ ] Paste technical release notes into [Drutopia releases](https://gitlab.com/drutopia/documentation/edit/master/drutopia-releases.md)
+
+### Update environment projects
+
+* [ ] Drutopia Template
 
 
 /title Release Drutopia 1.0-alpha<complete exact tag>
