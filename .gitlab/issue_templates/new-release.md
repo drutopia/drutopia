@@ -1,10 +1,14 @@
-To issue a new release of the Drutopia distribution please coordinate with a tech lead and [follow the documentation](http://docs.drutopia.org/en/latest/issuing-new-release-of-features-and-distribution.html).
+This issue provides a checklist for issuing a new release of the Drutopia distribution.
 
 ## Special considerations
 
-Note any special considerations for this release, as `* [ ] checklist items` if possible.
+* [ ] No special considerations / all considerations enumerated immediately below 
 
 ## Work Required
+
+* [ ] Coordinated with a tech lead
+* [ ] [Consulted the documentation](http://docs.drutopia.org/en/latest/issuing-new-release-of-features-and-distribution.html) for each step
+* [ ] Updated issue title with exact tag for next release
 
 ### Release new version of Drutopia modules
 
@@ -36,4 +40,7 @@ Check off when a release is made or if there is no need to make a release.
 ### Tag and release
 
 * [ ] New release of Drutopia distribution issued
+* [ ] Technical release notes pasted into [Drutopia releases](https://gitlab.com/drutopia/documentation/edit/master/drutopia-releases.md)
 
+
+/title Release Drutopia 1.0-alpha<complete exact tag>
