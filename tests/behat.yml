@@ -2,20 +2,18 @@ default:
   suites:
     default:
       contexts:
-        - '\Drupal\DrupalExtension\Context\DrupalContext'
-        - '\Drupal\DrupalExtension\Context\MinkContext'
-        - '\Drupal\DrupalExtension\Context\MessageContext'
-        - '\Drupal\DrupalExtension\Context\DrushContext'
+        - FeatureContext
+        - Drupal\DrupalExtension\Context\DrupalContext
+        - Drupal\DrupalExtension\Context\MinkContext
+        - Drupal\DrupalExtension\Context\MessageContext
+        - Drupal\DrupalExtension\Context\DrushContext
   extensions:
     Behat\MinkExtension:
-      sessions:
-        default:
-          goutte: ~
-        javascript:
-          selenium2:
-            browser: phantomjs
+      goutte: ~
+      selenium2: ~
+      base_url: http://localhost/drutopia/drutopia_template/web
     Drupal\DrupalExtension:
       blackbox: ~
-      api_driver: drupal
-      drupal:
-        drupal_root: ../../../../
+#      api_driver: 'drupal'
+#      drupal:
+#        drupal_root: '/var/www/html/drutopia/drutopia_template'
