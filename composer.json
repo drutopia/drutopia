@@ -82,5 +82,12 @@
         "drupal/devel": "^1.0",
         "squizlabs/php_codesniffer": "2.*",
         "se/selenium-server-standalone": "^2.53"
+    },
+    "extra": {
+        "patches": {
+            "drupal/ds": {
+                "Parent theme template inheritance bug": "https://www.drupal.org/files/issues/parent_profile_template-2895316-3.patch"
+            }
+        }
     }
 }
