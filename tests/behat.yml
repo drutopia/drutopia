@@ -14,6 +14,6 @@ default:
       base_url: http://localhost/drutopia/drutopia_template/web
     Drupal\DrupalExtension:
       blackbox: ~
-#      api_driver: 'drupal'
-#      drupal:
-#        drupal_root: '/var/www/html/drutopia/drutopia_template'
+      api_driver: 'drupal'
+      drupal:
+        drupal_root: '../../../../'
