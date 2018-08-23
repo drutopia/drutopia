@@ -4,29 +4,26 @@ dependencies:
   config:
     - block_visibility_groups.block_visibility_group.home_page
   content:
-    - 'block_content:slide:9f7eec29-3c40-49f1-b7d9-18ff5c4eb32d'
-  enforced:
-    module:
-      - block_content
+    - 'block_content:slide:a3a19121-c6a2-4a3f-8225-8e84f5fb0c9d'
   module:
     - block_content
     - block_visibility_groups
   theme:
     - octavia
-id: home_page_hero
+id: home_page_custom_1
 theme: octavia
-region: highlighted
+region: content_bottom
 weight: 0
 provider: null
-plugin: 'block_content:9f7eec29-3c40-49f1-b7d9-18ff5c4eb32d'
+plugin: 'block_content:a3a19121-c6a2-4a3f-8225-8e84f5fb0c9d'
 settings:
-  id: 'block_content:9f7eec29-3c40-49f1-b7d9-18ff5c4eb32d'
-  label: 'Home page hero'
+  id: 'block_content:a3a19121-c6a2-4a3f-8225-8e84f5fb0c9d'
+  label: 'Home page custom 1'
   provider: block_content
   label_display: '0'
   status: true
   info: ''
-  view_mode: full
+  view_mode: columnar
 visibility:
   condition_group:
     id: condition_group
