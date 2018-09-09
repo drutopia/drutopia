@@ -36,7 +36,7 @@
         "drupal-composer/drupal-scaffold": "^2.0.0",
         "drupal/core": "^8.5",
         "drupal/better_normalizers": "^1.0-beta3",
-        "drupal/block_visibility_groups": "^1.1",
+        "drupal/block_visibility_groups": "1.x-dev",
         "drupal/components": "^1.0",
         "drupal/config_actions_provider": "^1.0-alpha3",
         "drupal/config_sync": "^2.0-alpha9",
