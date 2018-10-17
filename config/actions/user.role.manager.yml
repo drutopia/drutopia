@@ -14,8 +14,12 @@ actions:
     value: 'access user contact forms'
   'administer url aliases':
     value: 'administer url aliases'
+  'administer eu cookie compliance popup':
+    value: 'administer eu cookie compliance popup'
   'bypass node access':
     value: 'bypass node access'
   'create url aliases':
     value: 'create url aliases'
+  'edit gdpr_checklist checklistapi checklist':
+    value: 'edit gdpr_checklist checklistapi checklist'
 
