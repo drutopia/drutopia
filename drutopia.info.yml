@@ -27,6 +27,7 @@ dependencies:
   - editor
   - field_ui
   - file
+  - gdpr
   - help
   - history
   - image
