@@ -2,6 +2,7 @@ default:
   suites:
     default:
       contexts:
+        # - Drupal\drutopia\FeatureContext
         - FeatureContext
         - Drupal\DrupalExtension\Context\DrupalContext
         - Drupal\DrupalExtension\Context\MinkContext
@@ -9,10 +10,29 @@ default:
         - Drupal\DrupalExtension\Context\DrushContext
   extensions:
     Behat\MinkExtension:
-      goutte: ~
-      selenium2: ~
+      sessions:
+        default:
+          goutte: ~
+        javascript:
+          selenium2:
+            browser: phantomjs
+      # TODO don't hardcode this, so it will work outside drutopia_vm
+      base_url: http://drutopia-vm.test
     Drupal\DrupalExtension:
       blackbox: ~
       api_driver: drupal
       drupal:
         drupal_root: ../../../../
+      selectors:
+        message_selector: '.messages'
+        error_message_selector: '.messages.messages--error'
+        success_message_selector: '.messages.messages--status'
+        login_form_selector: '#user-login-form'
+      text:
+        username_field: "Username"
+      region_map:
+        menu: "#navbar-menu"
+        footer: ".footer"
+        content: "main"
+        admin_content: ".page-content"
+        toolbar: "#toolbar-administration"
