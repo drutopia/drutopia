@@ -1,0 +1,28 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_visibility_groups.block_visibility_group.resource_listing
+    - facets.facet.resource_topics
+  module:
+    - block_visibility_groups
+    - facets
+  theme:
+    - octavia
+id: resource_topics_facet
+theme: octavia
+region: sidebar_first
+weight: 2
+provider: null
+plugin: 'facet_block:resource_topics'
+settings:
+  id: 'facet_block:resource_topics'
+  label: Topics
+  provider: facets
+  label_display: visible
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: resource_listing
+    context_mapping: {  }
