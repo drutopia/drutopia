@@ -1,0 +1,29 @@
+uuid: 392eb691-4753-4737-af52-c4d417d12522
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_visibility_groups.block_visibility_group.blog_listing
+    - facets.facet.blog_topics
+  module:
+    - block_visibility_groups
+    - facets
+  theme:
+    - octavia
+id: blog_topics_facet
+theme: octavia
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'facet_block:blog_topics'
+settings:
+  id: 'facet_block:blog_topics'
+  label: Topics
+  provider: facets
+  label_display: visible
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: blog_listing
+    context_mapping: {  }

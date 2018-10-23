@@ -1,0 +1,28 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_visibility_groups.block_visibility_group.article_listing
+    - facets.facet.article_type
+  module:
+    - block_visibility_groups
+    - facets
+  theme:
+    - octavia
+id: article_type_facet
+theme: octavia
+region: sidebar_first
+weight: 4
+provider: null
+plugin: 'facet_block:article_type'
+settings:
+  id: 'facet_block:article_type'
+  label: Type
+  provider: facets
+  label_display: visible
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: article_listing
+    context_mapping: {  }
