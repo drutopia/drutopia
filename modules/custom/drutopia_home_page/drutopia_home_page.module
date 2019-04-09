@@ -17,7 +17,7 @@ function drutopia_home_page_node_insert(EntityInterface $node) {
   if ($uuid === 'fa7d176d-ae37-4625-baf4-43cc4fd10fd4') {
     \Drupal::configFactory()
       ->getEditable('system.site')
-      ->set('page.front', 'node/' . $node->id())
-      ->save(); 
+      ->set('page.front', '/node/' . $node->id())
+      ->save();
   }
 }
