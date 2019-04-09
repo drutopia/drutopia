@@ -1,0 +1,23 @@
+<?php
+
+/**
+ * @file
+ * Provides configuration and content for a home page.
+ */
+
+use Drupal\Core\Entity\EntityInterface;
+
+/**
+ * Implements hook_node_insert().
+ *
+ * Sets system.site.page.front to the home page node's path.
+ */
+function drutopia_home_page_node_insert(EntityInterface $node) {
+  $uuid = $node->uuid();
+  if ($uuid === 'fa7d176d-ae37-4625-baf4-43cc4fd10fd4') {
+    \Drupal::configFactory()
+      ->getEditable('system.site')
+      ->set('page.front', '/node/' . $node->id())
+      ->save();
+  }
+}
