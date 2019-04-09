@@ -1,0 +1,29 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_visibility_groups.block_visibility_group.search
+    - facets.facet.search_content_type
+  module:
+    - block_visibility_groups
+    - facets
+  theme:
+    - octavia
+id: search_content_type_facet
+theme: octavia
+region: sidebar_first
+weight: 2
+provider: null
+plugin: 'facet_block:search_content_type'
+settings:
+  id: 'facet_block:search_content_type'
+  label: 'Content type'
+  provider: facets
+  label_display: visible
+  block_id: search_content_type_facet
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: search
+    context_mapping: {  }

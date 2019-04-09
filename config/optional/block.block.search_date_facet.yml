@@ -1,0 +1,29 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_visibility_groups.block_visibility_group.search
+    - facets.facet.search_date
+  module:
+    - block_visibility_groups
+    - facets
+  theme:
+    - octavia
+id: search_date_facet
+theme: octavia
+region: sidebar_first
+weight: 6
+provider: null
+plugin: 'facet_block:search_date'
+settings:
+  id: 'facet_block:search_date'
+  label: Year
+  provider: facets
+  label_display: visible
+  block_id: search_date_facet
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: search
+    context_mapping: {  }
