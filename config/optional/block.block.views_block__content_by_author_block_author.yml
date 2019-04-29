@@ -1,0 +1,38 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.content_by_author
+  module:
+    - block_visibility_groups
+    - ctools
+    - views
+  theme:
+    - octavia
+id: views_block__content_by_author_block_author
+theme: octavia
+region: content
+weight: 12
+provider: null
+plugin: 'views_block:content_by_author-block_author'
+settings:
+  id: 'views_block:content_by_author-block_author'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      people: people
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
