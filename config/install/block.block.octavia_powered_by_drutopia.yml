@@ -7,8 +7,8 @@ dependencies:
     - octavia
 id: octavia_powered_by_drutopia
 theme: octavia
-region: footer
-weight: -7
+region: footer_info
+weight: 4
 provider: null
 plugin: drutopia_powered_by_block
 settings:

@@ -58,3 +58,10 @@ function drutopia_install() {
   // Enable the admin theme.
   \Drupal::configFactory()->getEditable('node.settings')->set('use_admin_theme', TRUE)->save(TRUE);
 }
+
+/**
+ * Enable dependent module Menu block.
+ */
+function drutopia_update_8101() {
+  \Drupal::service('module_installer')->install(['menu_block']);
+}

@@ -1,0 +1,30 @@
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:ab794f80-2d8f-4254-bda4-6554074ab46c'
+  module:
+    - block_content
+    - block_visibility_groups
+  theme:
+    - octavia
+id: footer_contact_info
+theme: octavia
+region: footer_info
+weight: -4
+provider: null
+plugin: 'block_content:ab794f80-2d8f-4254-bda4-6554074ab46c'
+settings:
+  id: 'block_content:ab794f80-2d8f-4254-bda4-6554074ab46c'
+  label: 'Footer contact information'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }

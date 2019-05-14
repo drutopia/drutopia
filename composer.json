@@ -64,6 +64,7 @@
         "drupal/eu_cookie_compliance": "^1.2",
         "drupal/features": "^3.5",
         "drupal/gdpr": "^2.0-alpha4",
+        "drupal/menu_block": "^1.5",
         "drupal/paranoia": "^1.0-alpha1",
         "drupal/subprofiles": "^1.0-alpha1",
         "drupal/bulma": "^1.0-alpha2",

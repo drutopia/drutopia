@@ -1,0 +1,30 @@
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:5eeea524-f31d-4a75-92aa-8f3d92925a9f'
+  module:
+    - block_content
+    - block_visibility_groups
+  theme:
+    - octavia
+id: footer_copyleft
+theme: octavia
+region: footer_notice
+weight: 0
+provider: null
+plugin: 'block_content:5eeea524-f31d-4a75-92aa-8f3d92925a9f'
+settings:
+  id: 'block_content:5eeea524-f31d-4a75-92aa-8f3d92925a9f'
+  label: 'Footer copyleft'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }
