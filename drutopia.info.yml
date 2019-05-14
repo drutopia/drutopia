@@ -31,6 +31,7 @@ dependencies:
   - help
   - history
   - image
+  - menu_block
   - menu_link_content
   - menu_ui
   - node
