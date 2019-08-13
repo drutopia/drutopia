@@ -41,6 +41,7 @@ dependencies:
   - quickedit
   - rdf
   - shortcut
+  - skins
   - subprofiles
   - system
   - taxonomy
