@@ -65,3 +65,10 @@ function drutopia_install() {
 function drutopia_update_8101() {
   \Drupal::service('module_installer')->install(['menu_block']);
 }
+
+/**
+ * Enable dependent module Skins.
+ */
+function drutopia_update_8102() {
+  \Drupal::service('module_installer')->install(['skins']);
+}
