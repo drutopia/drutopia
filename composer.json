@@ -21,15 +21,6 @@
             "./bin/phing push"
         ]
     },
-    "extra": {
-        "installer-paths": {
-            "web/core": ["type:drupal-core"],
-            "web/profiles/{$name}": ["type:drupal-profile"],
-            "web/modules/contrib/{$name}": ["type:drupal-module"],
-            "web/themes/{$name}": ["type:drupal-theme"],
-            "drush/contrib/{$name}": ["type:drupal-drush"]
-        }
-    },
     "require": {
         "cweagans/composer-patches": "^1.5.0",
         "composer/installers": "^1.0",
@@ -87,6 +78,13 @@
         "se/selenium-server-standalone": "^2.53"
     },
     "extra": {
+        "installer-paths": {
+            "web/core": ["type:drupal-core"],
+            "web/profiles/{$name}": ["type:drupal-profile"],
+            "web/modules/contrib/{$name}": ["type:drupal-module"],
+            "web/themes/{$name}": ["type:drupal-theme"],
+            "drush/contrib/{$name}": ["type:drupal-drush"]
+        },
         "patches": {
             "drupal/ds": {
                 "Parent theme template inheritance bug": "https://www.drupal.org/files/issues/parent_profile_template-2895316-3.patch"
