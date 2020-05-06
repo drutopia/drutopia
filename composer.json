@@ -74,7 +74,7 @@
         "enable-patching": true,
         "patches": {
             "drupal/ds": {
-                "Parent theme template inheritance bug": "https://www.drupal.org/files/issues/parent_profile_template-2895316-3.patch"
+                "Parent theme template inheritance bug": "https://www.drupal.org/files/issues/2020-04-30/2895316-10.patch"
             }
         }
     }
