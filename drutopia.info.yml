@@ -49,6 +49,7 @@ dependencies:
   - taxonomy
   - toolbar
   - tour
+  - twigsuggest
   - user
   - views
   - views_ui
