@@ -72,3 +72,10 @@ function drutopia_update_8101() {
 function drutopia_update_8102() {
   \Drupal::service('module_installer')->install(['skins']);
 }
+
+/**
+ * Uninstall Default Content.
+ */
+function drutopia_update_8103() {
+  $installer = \Drupal::service('module_installer')->uninstall(['default_content']);
+}

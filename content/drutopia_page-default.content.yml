@@ -1,0 +1,68 @@
+# Add a basic page with simple values.
+- entity: 'node'
+  type: 'page'
+  title: 'About'
+  status: 1
+  uuid: 'f7b531eb-3ac3-4a49-8ecb-752f18c972b0'
+  # Rich text fields contain multiple keys that must be provided.
+  field_summary:
+    - format: 'basic_html'
+      # Using a pipe we can define content across multiple lines.
+      value: |
+        <p>At the moment, summaries on Basic Pages do not get displayed elsewhere.</p>
+  # Populate a body paragraph field.
+  field_body_paragraph:
+    # Define a nested entity directly as a field item value.
+    - entity: 'paragraph'
+      type: 'text'
+      field_text:
+        - value: |
+            <p><em>When creating an About page, think about your audience and anticipate the questions they have about your organization as well as what you want them to know about you. </em></p><h2>About Drutopia</h2><p>Drutopia is a flexible and extensible Drupal distribution that can be used as the basis for building a single website for your group or a customized platform for your network or organization. As a base distribution, Drutopia is pre-configured to provide the content types and other features that organizations will need when developing a public-facing website. It also comes with a number of already designed “Skins” which provide the front-facing look of a site.</p><p>By building on Drupal, a powerful content management system (CMS), Drutopia allows those with little technical skill to easily add the content and images that drive your website. Detailed documentation provides tips on how to work with your site. Drutopia can also be used as a base distribution off of which we can build specialized distributions that meet more targeted needs of a sector or network.</p><p>For questions on using the distribution, you can<p><ul><li>read the end user documentation on <a href="http://docs.drutopia.org/en/latest/end-user-documentation.html">Drutopia Docs</a></li><li>file a support ticket in the <a href="https://gitlab.com/drutopia/drutopia/issues/new">Drutopia GitLab Project</a></li><li>email us at info@drutopia.org</li></ul></p>
+          format: 'basic_html'
+
+# Import a child link for the about page.
+- entity: 'menu_link_content'
+  title: 'About'
+  description: 'Find out more about us'
+  menu_name: 'main'
+  weight: 0
+  expanded: 1
+  link:
+    uri: 'internal:/about'
+  # This menu item will be nested underneath the "Root Level Menu Link" item.
+  parent:
+    - entity: "menu_link_content"
+      menu_name: "main"
+      title: 'About Us'
+
+# Add a basic page with simple values.
+- entity: 'node'
+  type: 'page'
+  title: 'Privacy Policy'
+  status: 1
+  uuid: '366a1b1e-04e6-443f-a73a-735b590fa0d1'
+  # Rich text fields contain multiple keys that must be provided.
+  field_summary:
+    - format: 'basic_html'
+      # Using a pipe we can define content across multiple lines.
+      value: |
+        <p>Every website should have a well developed and clearly worded privacy policy.</p>
+  # Populate a body paragraph field.
+  field_body_paragraph:
+    # Define a nested entity directly as a field item value.
+    - entity: 'paragraph'
+      type: 'text'
+      field_text:
+        - value: |
+            <p>Every website should have a well developed and clearly worded privacy policy.&nbsp; This policy should also be easy for web visitors to find. Replace the text on this page (and its summary) with your existing privacy policy.</p><p>If you don't already have one, use some of these suggested resources to start your work of crafting one. Depending on your jurisdiction and the location of your website visitors, specific requirements will apply. Viewing the privacy policies of groups you admire is another good place to start.</p><p><a href="https://gdpr.eu/privacy-notice/">Writing a GDPR-compliant privacy notice</a></p><p><a href="https://www.wikihow.com/Create-a-Website-Privacy-Policy">How to Create a Website Privacy Policy</a></p><p>You can temporarily unpublish this page until you have your policy in place, although that may risk your noncompliance with applicable legislation.</p>
+          format: 'basic_html'
+
+# Add a menu link for the privacy page.
+- entity: 'menu_link_content'
+  title: 'Privacy Policy'
+  expanded: 0
+  menu_name: 'footer'
+  uuid: '371a8cea-7a35-4f4e-ad80-130d5797381f'
+  weight: 0
+  link:
+    uri: 'internal:/privacy-policy'
