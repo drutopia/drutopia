@@ -1,6 +1,6 @@
 services:
-  drutopia_home_page.default_content_import_subscriber:
-    class: Drupal\drutopia_home_page\EventSubscriber\DefaultContentImportSubscriber
+  drutopia_home_page.yaml_content_post_save_subscriber:
+    class: Drupal\drutopia_home_page\EventSubscriber\YamlContentPostSaveSubscriber
     arguments: ['@exclude_node_title.manager']
     tags:
       - { name: event_subscriber }

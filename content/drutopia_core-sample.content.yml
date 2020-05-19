@@ -1,0 +1,13 @@
+# Add tags used in article sample content.
+- entity: 'taxonomy_term'
+  vid: 'tags'
+  name: 'Garden'
+  uuid: '495bace5-8a62-41c0-befd-de6ae874b49f'
+- entity: 'taxonomy_term'
+  vid: 'tags'
+  name: 'Spain'
+  uuid: '17645072-70d1-44bd-a225-6f7c8591bc81'
+- entity: 'taxonomy_term'
+  vid: 'tags'
+  name: 'Drutopia'
+  uuid: 'eae9d9cd-f3b3-43c4-a262-ab4b6ff5e5bc'

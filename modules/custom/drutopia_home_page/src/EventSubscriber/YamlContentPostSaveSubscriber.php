@@ -2,10 +2,9 @@
 
 namespace Drupal\drutopia_home_page\EventSubscriber;
 
-use Drupal\default_content\Event\DefaultContentEvents;
-use Drupal\default_content\Event\ImportEvent;
+use Drupal\yaml_content\Event\EntityPostSaveEvent;
+use Drupal\yaml_content\Event\YamlContentEvents;
 use Drupal\exclude_node_title\ExcludeNodeTitleManager;
-use Symfony\Component\EventDispatcher\Event;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 
 /**
@@ -13,7 +12,7 @@ use Symfony\Component\EventDispatcher\EventSubscriberInterface;
  *
  * Adds the node page default content to the exclude node title node list.
  */
-class DefaultContentImportSubscriber implements EventSubscriberInterface {
+class YamlContentPostSaveSubscriber implements EventSubscriberInterface {
 
   /**
    * The exclude node title manager.
@@ -35,19 +34,14 @@ class DefaultContentImportSubscriber implements EventSubscriberInterface {
   /**
    * Sets the exclude node title status of the home page default content.
    *
-   * @param \Drupal\Core\Config\ConfigCrudEvent $event
-   *   The configuration event.
-   * @param string $name
-   *   The event name.
+   * @param \Drupal\yaml_content\Event\EntityPostSaveEvent $event
+   *   The YAML Content post-save event.
    */
-  public function defaultContentExcludeNodeTitle(ImportEvent $event, $name) {
-    $module = $event->getModule();
-    if ($module === 'drutopia_home_page') {
-      $entities = $event->getImportedEntities();
-      $home_page_uuid = 'fa7d176d-ae37-4625-baf4-43cc4fd10fd4';
-      if (isset($entities[$home_page_uuid])) {
-        $this->excludeNodeTitleManager->addNodeToList($entities[$home_page_uuid]);
-      }
+  public function defaultContentExcludeNodeTitle(EntityPostSaveEvent $event) {
+    $entity = $event->getEntity();
+    $home_page_uuid = 'fa7d176d-ae37-4625-baf4-43cc4fd10fd4';
+    if ($entity->uuid() === $home_page_uuid) {
+      $this->excludeNodeTitleManager->addNodeToList($entity);
     }
   }
 
@@ -55,7 +49,7 @@ class DefaultContentImportSubscriber implements EventSubscriberInterface {
    * {@inheritdoc}
    */
   static function getSubscribedEvents() {
-    $events[DefaultContentEvents::IMPORT][] = ['defaultContentExcludeNodeTitle'];
+    $events[YamlContentEvents::ENTITY_POST_SAVE][] = ['defaultContentExcludeNodeTitle'];
     return $events;
   }
 

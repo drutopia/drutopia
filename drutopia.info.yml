@@ -21,7 +21,6 @@ dependencies:
   - contextual
   - datetime
   - dblog
-  - default_content
   - drutopia_core
   - drutopia_seo
   - drutopia_site
@@ -52,6 +51,7 @@ dependencies:
   - user
   - views
   - views_ui
+  - yaml_content
 themes:
   - octavia
   - seven

@@ -7,6 +7,8 @@ dependencies:
   - block
   - block_content
   - block_visibility_groups
+  - drutopia_article
   - drutopia_landing_page
+  - drutopia_page
   - system
   - views

@@ -1,0 +1,193 @@
+# Add a taxonomy term for the article content type.
+- entity: 'taxonomy_term'
+  vid: 'article_type'
+  name: 'News'
+  uuid: '66269dfc-8a49-47b4-bb04-d981415a7a1c'
+
+# Add a basic article page with simple values.
+- entity: 'node'
+  type: 'article'
+  title: 'Sample article'
+  status: 1
+  uuid: '8572ecd1-0f0c-48e5-8151-83451f6baf61'
+  # Rich text fields contain multiple keys that must be provided.
+  field_summary:
+    - format: 'basic_html'
+      # Using a pipe we can define content across multiple lines.
+      value: |
+        <p>The summary field is displayed as the shortened (teaser form) of your article. This will show up, for example, on a listing page of articles. It should capture the essence of your article and ideally be two to three sentences.</p>
+  # Populate a body paragraph field.
+  field_body_paragraph:
+    # Define a nested entity directly as a field item value.
+    - entity: 'paragraph'
+      type: 'text'
+      field_text:
+        - value: |
+            <p>Articles are often a key element of your site. They will be used for items such as news, updates or announcement and can also be used for things such as press releases.</p><p>An article vocabulary lets you categorize your articles according to the type of article they are. This allows for articles of a particular type to be grouped together.</p><p>At a minimum every article should have an image (which will be associated with the article and display in different sizes in different displays), a summary field and a text paragraph in the body field.</p><p>All Drutopia content types are built using the Paragraphs module which lets you add a variety of types of content and arrange them in the order you wish. When creating an article you can add standard text paragraphs in the body paragraph field, but also add images or files (such as a PDF).</p>
+          format: 'basic_html'
+  field_image:
+    # To lookup and add files we'll need to use a different callback function.
+    - '#process':
+        # In this case we're looking up a file, so we'll use the `file` callback.
+        callback: 'file'
+        args:
+          # Our first argument is, again, the bundle of the entity type.
+          - 'image'
+          # For this callback our additional arguments are telling what file we want.
+          # By default, images are searched for within an `images` directory beside the
+          # `content` directory containing our content files.
+          - filename: 'bowl_strawberries.JPG'
+      # Additional properties needed for a reference field may be defined at the same
+      # level as the process indicator.
+      alt: 'Bowl of ripe, red strawberries.'
+  field_tags:
+    - '#process':
+        callback: 'reference'
+        args:
+          - 'taxonomy_term'
+          - vid: 'tags'
+            name: 'Garden'
+  field_article_type:
+    - '#process':
+        callback: 'reference'
+        args:
+          - 'taxonomy_term'
+          - vid: 'article_type'
+            name: 'News'
+
+# Add a basic article page with simple values.
+- entity: 'node'
+  type: 'article'
+  title: 'Duis posuere bibendum erat'
+  status: 1
+  uuid: 'e925851d-5223-4846-9bb8-e98ddfd27310'
+  # Rich text fields contain multiple keys that must be provided.
+  field_summary:
+    - format: 'basic_html'
+      # Using a pipe we can define content across multiple lines.
+      value: |
+        <p>Ut bibendum fermentum justo at dictum. Donec varius nisl tempus iaculis porta. Aliquam auctor faucibus lectus a auctor. Curabitur vitae orci condimentum, auctor nibh sit amet, posuere purus.</p>
+  # Populate a body paragraph field.
+  field_body_paragraph:
+    # Define a nested entity directly as a field item value.
+    - entity: 'paragraph'
+      type: 'text'
+      field_text:
+        - value: |
+            <p>Ut bibendum fermentum justo at dictum. Donec varius nisl tempus iaculis porta. Aliquam auctor faucibus lectus a auctor. Curabitur vitae orci condimentum, auctor nibh sit amet, posuere purus. Nunc mattis eros augue, nec ullamcorper augue rutrum non. Ut bibendum fermentum justo at dictum. Donec varius nisl tempus iaculis porta. Aliquam auctor faucibus lectus a auctor.</p><p>Curabitur vitae orci condimentum, auctor nibh sit amet, posuere purus. Nunc mattis eros augue, nec ullamcorper augue rutrum non. Ut bibendum fermentum justo at dictum. Donec varius nisl tempus iaculis porta. Aliquam auctor faucibus lectus a auctor. Curabitur vitae orci condimentum, auctor nibh sit amet, posuere purus. Nunc mattis eros augue, nec ullamcorper augue rutrum non. Ut bibendum fermentum justo at dictum. Donec varius nisl tempus iaculis porta. Aliquam auctor faucibus lectus a auctor. Curabitur vitae orci condimentum, auctor nibh sit amet, posuere purus. Nunc mattis eros augue, nec ullamcorper augue rutrum non.</p>
+
+          format: 'basic_html'
+  field_image:
+    # To lookup and add files we'll need to use a different callback function.
+    - '#process':
+        # In this case we're looking up a file, so we'll use the `file` callback.
+        callback: 'file'
+        args:
+          # Our first argument is, again, the bundle of the entity type.
+          - 'image'
+          # For this callback our additional arguments are telling what file we want.
+          # By default, images are searched for within an `images` directory beside the
+          # `content` directory containing our content files.
+          - filename: 'basil_dahlia.JPG'
+      # Additional properties needed for a reference field may be defined at the same
+      # level as the process indicator.
+      alt: 'Harvest of basil and dahlia.'
+  field_tags:
+    - '#process':
+        callback: 'reference'
+        args:
+          - 'taxonomy_term'
+          - vid: 'tags'
+            name: 'Garden'
+
+# Add a basic article page with simple values.
+- entity: 'node'
+  type: 'article'
+  title: 'Etiam sit amet eros leo'
+  status: 1
+  uuid: 'b2fed33b-6f3a-46ce-9125-ff161e60122b'
+  # Rich text fields contain multiple keys that must be provided.
+  field_summary:
+    - format: 'basic_html'
+      # Using a pipe we can define content across multiple lines.
+      value: |
+        <p>Ut bibendum fermentum justo at dictum onec varius nisl tempus iaculis porta liquam auctor faucibus lectus a auctor urabitur vitae orci condimentum.</p>
+  # Populate a body paragraph field.
+  field_body_paragraph:
+    # Define a nested entity directly as a field item value.
+    - entity: 'paragraph'
+      type: 'text'
+      field_text:
+        - value: |
+            <p>Ut bibendum fermentum justo at dictum. Donec varius nisl tempus iaculis porta. Aliquam auctor faucibus lectus a auctor. Curabitur vitae orci condimentum, auctor nibh sit amet, posuere purus. Nunc mattis eros augue, nec ullamcorper augue rutrum non. Aliquam erat volutpat. Donec pulvinar fringilla quam, sit amet ornare risus auctor sit amet. Proin sit amet sodales tortor. Mauris convallis, eros ut posuere vestibulum, turpis felis venenatis mauris, at venenatis sem odio ac est.</p><p>Ut bibendum fermentum justo at dictum. Donec varius nisl tempus iaculis porta. Aliquam auctor faucibus lectus a auctor. Curabitur vitae orci condimentum, auctor nibh sit amet, posuere purus. Nunc mattis eros augue, nec ullamcorper augue rutrum non. Aliquam erat volutpat. Donec pulvinar fringilla quam, sit amet ornare risus auctor sit amet. Proin sit amet sodales tortor. Mauris convallis, eros ut posuere vestibulum, turpis felis venenatis mauris, at venenatis sem odio ac est.</p><p>Ut bibendum fermentum justo at dictum. Donec varius nisl tempus iaculis porta. Aliquam auctor faucibus lectus a auctor. Curabitur vitae orci condimentum, auctor nibh sit amet, posuere purus. Nunc mattis eros augue, nec ullamcorper augue rutrum non. Aliquam erat volutpat. Donec pulvinar fringilla quam, sit amet ornare risus auctor sit amet. Proin sit amet sodales tortor. Mauris convallis, eros ut posuere vestibulum, turpis felis venenatis mauris, at venenatis sem odio ac est.</p>
+
+
+          format: 'basic_html'
+  field_image:
+    # To lookup and add files we'll need to use a different callback function.
+    - '#process':
+        # In this case we're looking up a file, so we'll use the `file` callback.
+        callback: 'file'
+        args:
+          # Our first argument is, again, the bundle of the entity type.
+          - 'image'
+          # For this callback our additional arguments are telling what file we want.
+          # By default, images are searched for within an `images` directory beside the
+          # `content` directory containing our content files.
+          - filename: 'cosmos.JPG'
+      # Additional properties needed for a reference field may be defined at the same
+      # level as the process indicator.
+      alt: 'Bright pink cosmos flowers.'
+  field_tags:
+    - '#process':
+        callback: 'reference'
+        args:
+          - 'taxonomy_term'
+          - vid: 'tags'
+            name: 'Garden'
+
+# Add a basic article page with simple values.
+- entity: 'node'
+  type: 'article'
+  title: 'Phasellus maximus finibus nisi'
+  status: 1
+  uuid: '71f4793c-dc70-4b14-8a0c-312d9bd17b73'
+  # Rich text fields contain multiple keys that must be provided.
+  field_summary:
+    - format: 'basic_html'
+      # Using a pipe we can define content across multiple lines.
+      value: |
+        <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam fermentum leo non ipsum consequat, in laoreet tellus facilisis. Sed auctor interdum dapibus.</p>
+  # Populate a body paragraph field.
+  field_body_paragraph:
+    # Define a nested entity directly as a field item value.
+    - entity: 'paragraph'
+      type: 'text'
+      field_text:
+        - value: |
+           <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam fermentum leo non ipsum consequat, in laoreet tellus facilisis. Sed auctor interdum dapibus. Suspendisse imperdiet ligula quis nunc hendrerit, id feugiat elit laoreet. Maecenas cursus mauris mi, et vestibulum est ultricies eget. Mauris rutrum turpis velit, vel aliquet ligula condimentum sed. Nulla tincidunt volutpat lectus faucibus efficitur. Proin turpis diam, tincidunt et sollicitudin et, pharetra in elit. Mauris auctor ex in imperdiet ornare.</p><p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam fermentum leo non ipsum consequat, in laoreet tellus facilisis. Sed auctor interdum dapibus. Suspendisse imperdiet ligula quis nunc hendrerit, id feugiat elit laoreet. Maecenas cursus mauris mi, et vestibulum est ultricies eget. Mauris rutrum turpis velit, vel aliquet ligula condimentum sed. Nulla tincidunt volutpat lectus faucibus efficitur. Proin turpis diam, tincidunt et sollicitudin et, pharetra in elit. Mauris auctor ex in imperdiet ornare.</p><p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam fermentum leo non ipsum consequat, in laoreet tellus facilisis. Sed auctor interdum dapibus. Suspendisse imperdiet ligula quis nunc hendrerit, id feugiat elit laoreet. Maecenas cursus mauris mi, et vestibulum est ultricies eget. Mauris rutrum turpis velit, vel aliquet ligula condimentum sed. Nulla tincidunt volutpat lectus faucibus efficitur. Proin turpis diam, tincidunt et sollicitudin et, pharetra in elit. Mauris auctor ex in imperdiet ornare.</p>
+
+
+          format: 'basic_html'
+  field_image:
+    # To lookup and add files we'll need to use a different callback function.
+    - '#process':
+        # In this case we're looking up a file, so we'll use the `file` callback.
+        callback: 'file'
+        args:
+          # Our first argument is, again, the bundle of the entity type.
+          - 'image'
+          # For this callback our additional arguments are telling what file we want.
+          # By default, images are searched for within an `images` directory beside the
+          # `content` directory containing our content files.
+          - filename: 'dahlia_garden.JPG'
+      # Additional properties needed for a reference field may be defined at the same
+      # level as the process indicator.
+      alt: 'Pink and purple dahlias.'
+  field_tags:
+    - '#process':
+        callback: 'reference'
+        args:
+          - 'taxonomy_term'
+          - vid: 'tags'
+            name: 'Garden'
