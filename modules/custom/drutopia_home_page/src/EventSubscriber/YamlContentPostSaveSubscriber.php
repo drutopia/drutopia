@@ -3,7 +3,6 @@
 namespace Drupal\drutopia_home_page\EventSubscriber;
 
 use Drupal\yaml_content\Event\EntityPostSaveEvent;
-use Drupal\yaml_content\Event\YamlContentEvents;
 use Drupal\exclude_node_title\ExcludeNodeTitleManager;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 
@@ -49,7 +48,9 @@ class YamlContentPostSaveSubscriber implements EventSubscriberInterface {
    * {@inheritdoc}
    */
   static function getSubscribedEvents() {
-    $events[YamlContentEvents::ENTITY_POST_SAVE][] = ['defaultContentExcludeNodeTitle'];
+    // Sites may not have YAML Content installed, so use a string rather than
+    // YamlContentEvents::ENTITY_POST_SAVE.
+    $events['yaml_content.import.entity_post_save'][] = ['defaultContentExcludeNodeTitle'];
     return $events;
   }
 
