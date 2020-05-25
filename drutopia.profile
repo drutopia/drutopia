@@ -9,10 +9,7 @@ use Drupal\contact\Entity\ContactForm;
 use Drupal\Core\Installer\InstallerKernel;
 use Drupal\Core\Form\FormStateInterface;
 
-// Include only when in install mode.
-if (InstallerKernel::installationAttempted()) {
-  include_once('drutopia.install.inc');
-}
+include_once('drutopia.install.inc');
 
 /**
  * Implements hook_form_FORM_ID_alter() for install_configure_form().
