@@ -2,7 +2,7 @@ name: Drutopia
 description: 'Provides an enhanced starting place for site building.'
 type: profile
 core: 8.x
-version: 8.x-1.0-rc2
+version: 8.x-1.0-rc3
 project: drutopia
 dependencies:
   - automated_cron
