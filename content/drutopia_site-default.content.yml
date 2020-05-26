@@ -1,0 +1,25 @@
+# Add a basic block for the footer.
+- entity: 'block_content'
+  type: 'basic'
+  info: 'Footer Copyleft'
+  status: 1
+  uuid: '5eeea524-f31d-4a75-92aa-8f3d92925a9f'
+  # Rich text fields contain multiple keys that must be provided.
+  body:
+    - format: 'basic_html'
+      # Using a pipe we can define content across multiple lines.
+      value: |
+        <p>Use this space for your attribution or copyright information.</p>
+
+# Add a basic block for the footer.
+- entity: 'block_content'
+  type: 'basic'
+  info: 'Footer contact information'
+  status: 1
+  uuid: 'ab794f80-2d8f-4254-bda4-6554074ab46c'
+  # Rich text fields contain multiple keys that must be provided.
+  body:
+    - format: 'basic_html'
+      # Using a pipe we can define content across multiple lines.
+      value: |
+        <p>123 Any Street<br />Any town, Province/State<br />Country Postal/Zip<br />Phone or other contact</p>

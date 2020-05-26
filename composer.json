@@ -51,6 +51,7 @@
         "drupal/riddler": "^1.1",
         "drupal/subprofiles": "^1.0-alpha2",
         "drupal/twigsuggest": "^1.0-beta2",
+        "drupal/yaml_content": "^1.0-alpha7",
         "drupal/bulma": "^1.0-beta4",
         "drupal/octavia": "^1.0-rc1"
     },
